@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ÍNTEGRA, barritas para seguir tu ritmo. Sitio académico de demostración.">
+    <title>Contacto | ÍNTEGRA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="barra-superior text-center">ÍNTEGRA · CREADA EN COMUNIDAD <span class="d-none d-md-inline">— Encontrá tu
+            próxima favorita</span></div>
+    <header class="sticky-top encabezado-sitio">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container"><a class="navbar-brand" href="index.html" aria-label="ÍNTEGRA, ir al inicio"><img
+                        src="img/logo-integra-aprobado.png" alt="ÍNTEGRA creada en comunidad" width="160"
+                        height="55"></a>
+                <div class="d-flex align-items-center gap-3 order-lg-3"><a href="productos.html#carrito"
+                        class="enlace-carrito" aria-label="Ver carrito"><i class="bi bi-bag"></i><span
+                            id="cart-count">0</span></a><button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav"
+                        aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav mx-auto gap-lg-4">
+                        <li class="nav-item"><a class="nav-link " href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link " href="productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link " href="preguntas.html">Preguntas</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-pagina banner-contacto">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6"><span class="subtitulo">HABLEMOS</span>
+                        <h1>CONTACTO<span class="punto-rosa">.</span></h1>
+                        <p>¿Tenés alguna consulta? Escribinos a través del formulario de demostración.</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="seccion-clara seccion-contacto">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5"><span class="subtitulo">ESTAMOS CERCA</span>
+                        <h2>Conectemos.</h2>
+                        <p>Esta marca es ficticia y se desarrolla para una entrega académica. No hay atención comercial
+                            real.</p>
+                        <div class="detalle-contacto"><i class="bi bi-bag"></i>
+                            <div>
+                                <h3>Conocé nuestros productos</h3><a href="productos.html">Explorar catálogo</a>
+                            </div>
+                        </div>
+                        <div class="detalle-contacto"><i class="bi bi-question-circle"></i>
+                            <div>
+                                <h3>Respuestas rápidas</h3><a href="preguntas.html">Preguntas frecuentes</a>
+                            </div>
+                        </div>
+                        <div class="dibujo-contacto" aria-hidden="true">✳</div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form class="formulario-contacto needs-validation" id="formulario-contacto" novalidate>
+                            <h2>Escribinos</h2>
+                            <p>Completá el formulario y probá la validación.</p>
+                            <div class="row g-3">
+                                <div class="col-md-6"><label class="form-label" for="nombre">Nombre y
+                                        apellido</label><input class="form-control" id="nombre" name="nombre" required
+                                        minlength="3" autocomplete="name">
+                                    <div class="invalid-feedback">Ingresá al menos 3 caracteres.</div>
+                                </div>
+                                <div class="col-md-6"><label class="form-label" for="email">Correo
+                                        electrónico</label><input class="form-control" type="email" id="email"
+                                        name="email" required autocomplete="email">
+                                    <div class="invalid-feedback">Ingresá un correo válido.</div>
+                                </div>
+                                <div class="col-12"><label class="form-label" for="motivo">Motivo de
+                                        consulta</label><select class="form-select" id="motivo" name="motivo" required>
+                                        <option valor="">Seleccioná una opción</option>
+                                        <option>Productos</option>
+                                        <option>Sobre el proyecto</option>
+                                        <option>Otra consulta</option>
+                                    </select>
+                                    <div class="invalid-feedback">Seleccioná un motivo.</div>
+                                </div>
+                                <div class="col-12"><label class="form-label" for="mensaje">Mensaje</label><textarea
+                                        class="form-control" id="mensaje" name="mensaje" rows="5" minlength="10"
+                                        required></textarea>
+                                    <div class="invalid-feedback">Escribí al menos 10 caracteres.</div>
+                                </div>
+                                <div class="col-12"><button class="btn boton-rosa" type="submit">Enviar mensaje <i
+                                            class="bi bi-arrow-right"></i></button></div>
+                            </div>
+                            <p class="estado-formulario" id="estado-formulario" role="status" aria-live="polite"></p>
+                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ <footer class="pie-sitio">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <h2 class="logo-pie">ÍNTEGRA<span>.</span></h2>
+                    <p>Creada en comunidad. Una pausa para cada ritmo.</p>
+
+                </div>
+                <div class="col-lg-4">
+                    <h3>Explorá</h3>
+                    <div class="enlaces-pie"><a href="index.html">Inicio</a><a href="productos.html">Productos</a><a
+                            href="nosotros.html">Nosotros</a><a href="preguntas.html">Preguntas</a><a
+                            href="contacto.html">Contacto</a></div>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Comunidad</h3>
+                    <div class="enlaces-redes">
+                        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                            <img src="img/tiktok.svg" alt="TikTok">
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <img src=img/instagram.svg alt="Instagram">
+                        </a>
+
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook">
+                            <img src="img/facebook.svg" alt="Facebook">
+                        </a>
+                    </div>
+                    <p class="small mt-3">Miranda Claps · Desarrollo 2 · 2026</p>
+                </div>
+            </div>
+            <div class="linea-pie">© 2026 ÍNTEGRA · </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
